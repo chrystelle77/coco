@@ -1,0 +1,32 @@
+Git est un logiciel de versionning qui permet de gérer les modifications faites sur les fichiers d'un projet par plusieurs membres d'une équipe de travail.
+Lorsque nous travaillons à plusieurs sur des fichiers, nous avons besoin de communiquer  pour savoir qui fait quoi, pour quelle raison et qsuand?
+Git permet  de centraliser les réponses à ces questions et donc d'assurer une meilleurs productivité sur le projet.
+
+-----------------------------------------------------
+1/Configuration de GIT
+-----------------------------------------------------
+Télécharger et installer GIT:
+	http://git-scm.com/downloads
+
+Lancer git bash et taper ces commandes :
+	
+	git config --global user.name "premon NOM"
+	git config --global user.email "perso@mail.com"
+	git config -l                  (permert de voir les config)
+
+-----------------------------------------------------
+2/ Premières commandes de GIT
+-----------------------------------------------------
+
+Via les commandes linux, se positionner dans le dossier qui contient le projet (commande cd etc...)
+Ensuite faire :
+
+	git init 			(permet de créer un repository git ICI)
+
+Créer et modifier son projet ( fichier index.html ect...)
+Ensuite renvoyer une permière version de son projet :
+
+	git status 			(permet de voir les infos en cours)
+	git add index.html	(permet d'ajouetr des fichiers qui seront destinées au versioning)
+	git commit -m "premiere version" 	(permet de versionner les fichiers ajoutés dans la liste destinées au vesioning, TOUJOURS accompagné d'un message de ce qu'on a fait)
+	git commit --ammend -m "premiere Version"		(permet de modifier le message de son dernier commit)
